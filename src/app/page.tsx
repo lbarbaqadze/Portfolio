@@ -68,15 +68,19 @@ export default function Home() {
 
       <main className={styles.containerOne}>
         <section className={styles.componentOne}>
-          <AutoSplitText className="text-2xl font-semibold">
-            <h1 className={styles.h1}>
-              Hello, I'm Lasha <br />
-              Front-End Web <br />
-              <span>Developer!</span>
-            </h1>
-            <p className={styles.p1}>Caucasus International University Student</p>
-            <p className={styles.p2}>Innovative, functional and user-friendly website digital solutions.</p>
-          </AutoSplitText>
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" data-aos-easing="ease-in-out">
+            <AutoSplitText className="text-2xl font-semibold">
+              <h1 className={styles.h1}>
+                Hello, I'm Lasha <br />
+                Front-End Web <br />
+                <span>Developer!</span>
+              </h1>
+              <p className={styles.p1}>Caucasus International University Student</p>
+              <p className={styles.p2}>
+                Innovative, functional and user-friendly website digital solutions.
+              </p>
+            </AutoSplitText>
+          </div>
 
           <div className={styles.buttonList}>
             {skills.map((skill, index) => (
@@ -182,7 +186,7 @@ export default function Home() {
           I enjoy turning complex problems into simple, elegant digital experiences.
         </p>
         <a
-          href="/cv/forportfolioCV.pdf"  
+          href="/cv/forportfolioCV.pdf"
           download="Lasha_Barbakadze_CV.pdf"
           className={styles.cvButton}
           data-aos="zoom-in"
