@@ -1,0 +1,42 @@
+.container {
+    background-color: rgba(58, 54, 54, 0.5); /* Alpha 0.5 */
+    -webkit-backdrop-filter: blur(1px);  
+    backdrop-filter: blur(1px);
+    padding: 10px;
+    width: max-content;
+    border-radius: 30px;
+    margin: 0 auto;    
+}
+.containerFluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    color: rgb(224, 215, 215);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 100;
+    transition: 0.2s;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.link:hover {
+    background-color: rgb(99, 94, 94);
+    border: 0;
+}
+@media screen and (max-width: 363px){
+    .container{
+        padding: 8px;        
+    }
+}
