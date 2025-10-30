@@ -11,7 +11,11 @@
     gap: 40px;
     padding: 0 40px;
 }
-
+@media screen and (max-width: 1024px){
+    .containerOne{
+        margin-top: 115px;
+    }
+}
 .componentOne {
     flex: 1;
 }
@@ -162,8 +166,7 @@
     }
 }
 
-.containerTwo {
-
+.containerTwo {    
     max-width: 1000px;
     margin: 0 auto;
     padding: 0px 30px;
@@ -236,9 +239,9 @@
     }
 }
 
-.containerThree {    
+.containerThree {        
     width: 100%;
-    margin: 80px auto;
+    margin: 50px auto;
     padding: 40px 20px;
     text-align: center;
     display: flex;
@@ -262,13 +265,22 @@
     margin: 0 auto;    
     padding: 0px 20px;
     text-align: center;
+    transform: translateY(-5%);
 }
-
+@media screen and (max-width:629px){
+    .containerFour{
+        transform: translateY(-1%);
+    }
+}
 .sectionTitle {
     font-size: 35px;
     color: #888;
     text-transform: uppercase;
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .projectsGrid {

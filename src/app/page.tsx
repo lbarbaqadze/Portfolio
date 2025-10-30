@@ -41,14 +41,14 @@ export default function Home() {
     { node: <SiReact />, title: "React" },
     { node: <SiNextdotjs />, title: "Next.js" },
     { node: <SiTypescript />, title: "TypeScript" },
-    { node: <SiHtml5 />, title: "Tailwind CSS" },
-    { node: <SiCss3 />, title: "Tailwind CSS" },
-    { node: <SiJavascript />, title: "Tailwind CSS" },
-    { node: <SiMysql />, title: "Tailwind CSS" },
-    { node: <SiMongodb />, title: "Tailwind CSS" },
-    { node: <SiBootstrap />, title: "Tailwind CSS" },
-    { node: <SiNodedotjs />, title: "Tailwind CSS" },
-    { node: <SiPython />, title: "Tailwind CSS" },
+    { node: <SiHtml5 />, title: "HTML" },
+    { node: <SiCss3 />, title: "CSS" },
+    { node: <SiJavascript />, title: "Javascript" },
+    { node: <SiMysql />, title: "MySQL" },
+    { node: <SiMongodb />, title: "MongoDB" },
+    { node: <SiBootstrap />, title: "Bootstrap" },
+    { node: <SiNodedotjs />, title: "Node.js" },
+    { node: <SiPython />, title: "Python" },
   ];
 
   const skills = ["HTML/CSS", "React", "Typescript", "NextJs"];
@@ -64,7 +64,7 @@ export default function Home() {
       alphaParticles={false}
       disableRotation={false}
     >
-      <Navbar style={{ marginTop: "20px" }} />
+      <Navbar />
 
       <main className={styles.containerOne}>
         <section className={styles.componentOne}>
@@ -204,7 +204,7 @@ export default function Home() {
         data-aos-easing="ease-in-out"
       >
         <h1 data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
-          Tech Stack <FontAwesomeIcon icon={faGears} />
+          Tech Stack <FontAwesomeIcon icon={faGears} style={{fontSize: "28px"}} />
         </h1>
         <div className="logoloop-wrapper">
           <LogoLoop
@@ -227,7 +227,7 @@ export default function Home() {
 
       <div className={styles.containerFour} id="projects">
         <h2 className={styles.sectionTitle} data-aos="fade-down" data-aos-duration="1000">
-          My Projects <FontAwesomeIcon icon={faDiagramProject} />
+          My Projects <FontAwesomeIcon icon={faDiagramProject} style={{fontSize: "28px"}} />
         </h2>
 
         <div className={styles.projectsGrid}>

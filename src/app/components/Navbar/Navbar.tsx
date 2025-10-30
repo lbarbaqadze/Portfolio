@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from "react";
 import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -18,7 +19,7 @@ export default function Navbar({ style }: Props) {
 
     useEffect(() => {
         AOS.init({
-            once: false,
+            once: true,
             mirror: true,
         });
     }, []);
@@ -30,14 +31,16 @@ export default function Navbar({ style }: Props) {
         }
     }
 
+    const [visible, setVisible] = useState(false);
+
+    useEffect(() => {
+        setVisible(true); 
+    }, []);
+
     return (
         <nav
-            className={`navbar ${styles.container}`}
-            style={style}
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-offset="0"
+           className={`navbar ${styles.container} ${visible ? styles.show : ""}`}
+            style={style}           
         >
             <div className={`container-fluid ${styles.containerFluid}`}>
                 <div className={styles.menu}>

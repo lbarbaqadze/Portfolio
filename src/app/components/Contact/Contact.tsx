@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import styles from './Contact.module.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 
 export default function ContactForm() {
     const [submitted, setSubmitted] = useState(false);
@@ -17,7 +19,9 @@ export default function ContactForm() {
 
     return (
         <div className={styles.containerSix} id='contact' >
-            <h1 data-aos="fade-down" className={styles.h1}>Contact Me</h1>
+            <h1 data-aos="fade-down" className={styles.h1}>Contact Me <FontAwesomeIcon icon={faEnvelopeOpenText}
+            style={{fontSize: "28px"}}
+            /></h1>
             <form
                 className={styles.contactForm}
                 action="https://formspree.io/f/mldolkaz"
