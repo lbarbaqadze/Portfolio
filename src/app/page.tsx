@@ -186,7 +186,7 @@ export default function Home() {
           I enjoy turning complex problems into simple, elegant digital experiences.
         </p>
         <a
-          href="/cv/forportfolioCV.pdf"
+          href={`${path}/cv/forportfolioCV.pdf`}
           download="Lasha_Barbakadze_CV.pdf"
           className={styles.cvButton}
           data-aos="zoom-in"
