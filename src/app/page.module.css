@@ -8,8 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
-    padding: 0 40px;
+    gap: 40px;    
 }
 @media screen and (max-width: 1024px){
     .containerOne{
@@ -34,8 +33,13 @@
     width: 100%;
     height: auto;
 }
+@media screen and (max-width: 1350px){
+    .containerOne{
+        padding: 0px 50px;
+    }
+}
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .containerOne {
         flex-direction: column;
         text-align: center;
@@ -56,15 +60,6 @@
 
     .social {
         justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .componentTwo :global(canvas),
-    .componentTwo :global(svg),
-    .componentTwo :global(div) {
-        max-width: 500px;
     }
 }
 
@@ -160,7 +155,6 @@
     .buttonList {
         flex-wrap: wrap;
     }
-
     .contact {
         padding: 6px 18px;
     }
