@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faGear, faGears } from "@fortawesome/free-solid-svg-icons";
+import { faGears } from "@fortawesome/free-solid-svg-icons";
 import { faDiagramProject } from "@fortawesome/free-solid-svg-icons";
 
 import LightRays from "./components/Background/LightRays";
@@ -54,6 +54,8 @@ export default function Home() {
   const skills = ["HTML/CSS", "React", "Typescript", "NextJs"];
 
   return (
+
+    <>
     <LightRays
       particleColors={['#ffffffff', '#ffffffff']}
       particleCount={900}
@@ -63,7 +65,8 @@ export default function Home() {
       moveParticlesOnHover={true}
       alphaParticles={false}
       disableRotation={false}
-    >
+    />
+    
       <Navbar />
 
       <main className={styles.containerOne}>
@@ -206,7 +209,7 @@ export default function Home() {
         <h1 data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
           Tech Stack <FontAwesomeIcon icon={faGears} style={{fontSize: "28px"}} />
         </h1>
-        <div className="logoloop-wrapper">
+        <div className={`logoloop-wrapper`}>
           <LogoLoop
             logos={techLogos.map(logo => ({
               ...logo,
@@ -218,8 +221,7 @@ export default function Home() {
             gap={40}
             pauseOnHover
             scaleOnHover
-            fadeOut
-            fadeOutColor="#000000ff"
+            fadeOut            
             ariaLabel="Technology partners"
           />
         </div>
@@ -232,6 +234,12 @@ export default function Home() {
 
         <div className={styles.projectsGrid}>
           {[
+            {
+              title: "BMW - Magazine",
+              description: "A modern web app featuring user login/registration stored in localStorage, interactive car catalog, and shopping cart functionality.",
+              image: `${path}/images/images8.png`,
+              link: "https://lbarbaqadze.github.io/bmwstore/"
+            },
             {
               title: "Georgia Tours Website",
               description: "Responsive travel website showcasing Georgia destinations using React.",
@@ -294,8 +302,6 @@ export default function Home() {
       </div>
 
       <Contact />
-
-
-    </LightRays>
+</>
   );
 }

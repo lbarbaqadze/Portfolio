@@ -1,11 +1,9 @@
 'use client'
 
-import { useState } from "react";
 import React, { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Navbar.module.css";
+import AOS from 'aos';
 
 type Props = {
     style?: React.CSSProperties
@@ -17,13 +15,6 @@ export default function Navbar({ style }: Props) {
         import("bootstrap/dist/js/bootstrap.bundle.min.js");
     }, []);
 
-    useEffect(() => {
-        AOS.init({
-            once: true,
-            mirror: true,
-        });
-    }, []);
-
     const handleScroll = (id: string) => {
         const element = document.getElementById(id);
         if (element) {
@@ -31,16 +22,10 @@ export default function Navbar({ style }: Props) {
         }
     }
 
-    const [visible, setVisible] = useState(false);
-
-    useEffect(() => {
-        setVisible(true); 
-    }, []);
-
     return (
         <nav
-           className={`navbar ${styles.container} ${visible ? styles.show : ""}`}
-            style={style}           
+            className={`navbar ${styles.container}`}
+            style={style}
         >
             <div className={`container-fluid ${styles.containerFluid}`}>
                 <div className={styles.menu}>

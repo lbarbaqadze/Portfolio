@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Lasha Barbakadze | Portfolio",
   description: "Explore my web development projects and CV.",
   openGraph: {
-    title: "Lasha Barbaqadze | Portfolio",
+    title: "Lasha Barbakadze | Portfolio",
     description: "Explore my web development projects and CV.",
     url: "https://lbarbaqadze.github.io/Portfolio/",
     siteName: "Lasha Barbakadze Portfolio",

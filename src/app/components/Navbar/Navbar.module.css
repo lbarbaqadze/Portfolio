@@ -1,5 +1,5 @@
 .container {
-    position: fixed;
+    position: absolute;
     top: 20px;
     left: 50%;
     transform: translateX(-50%); 
@@ -8,13 +8,8 @@
     padding: 10px 20px;
     border-radius: 30px;
     background-color: rgba(58, 54, 54, 0.5);
-    backdrop-filter: blur(5px);    
-    opacity: 0;
-    transition: opacity 0.6s ease;
-}
-
-.container.show {
-    opacity: 1;
+    backdrop-filter: blur(5px);
+    z-index: 1000;    
 }
 .containerFluid {
     display: flex;
@@ -44,8 +39,8 @@
     background-color: rgb(99, 94, 94);
     border: 0;
 }
-@media screen and (max-width: 363px){
+@media screen and (max-width: 380px){
     .container{
-        padding: 8px;        
+        padding: 10px;        
     }
 }
