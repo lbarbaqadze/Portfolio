@@ -235,6 +235,12 @@ export default function Home() {
         <div className={styles.projectsGrid}>
           {[
             {
+              title: "Georgian Wine - Website",
+              description: "Responsive website showcasing authentic Georgian wines with rich traditions. Browse our wine catalog and learn about each variety.",
+              image: `${path}/images/images9.png`,
+              link: "https://lbarbaqadze.github.io/GeorgianWine/"
+            },
+            {
               title: "BMW - Magazine",
               description: "A modern web app featuring user login/registration stored in localStorage, interactive car catalog, and shopping cart functionality.",
               image: `${path}/images/images8.png`,
