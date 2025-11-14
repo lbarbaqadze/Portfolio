@@ -262,7 +262,7 @@ export default function Home() {
               title: "GYM Website",
               description: "Informational CrossFit website where users can learn about the gym, check class schedules, and explore available programs.",
               image: `${path}/images/images3.png`,
-              link: "https://lbarbaqadze.github.io/Gym/"
+              link: "https://gymwebsite-204.vercel.app"
             },
             {
               title: "React MiniTools",
