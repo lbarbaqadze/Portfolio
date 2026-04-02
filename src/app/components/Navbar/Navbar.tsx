@@ -1,0 +1,65 @@
+'use client'
+
+import React, { useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import styles from "./Navbar.module.css";
+import AOS from 'aos';
+
+type Props = {
+    style?: React.CSSProperties
+}
+
+export default function Navbar({ style }: Props) {
+
+    useEffect(() => {
+        import("bootstrap/dist/js/bootstrap.bundle.min.js");
+    }, []);
+
+    const handleScroll = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    return (
+        <nav
+            className={`navbar ${styles.container}`}
+            style={style}
+        >
+            <div className={`container-fluid ${styles.containerFluid}`}>
+                <div className={styles.menu}>
+                    <ul>
+                        <li>
+                            <a
+                                className={styles.link}
+                                href="#about"
+                                onClick={(e) => { e.preventDefault(); handleScroll('about'); }}
+                            >
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className={styles.link}
+                                href="#projects"
+                                onClick={(e) => { e.preventDefault(); handleScroll('projects'); }}
+                            >
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className={styles.link}
+                                href="#contact"
+                                onClick={(e) => { e.preventDefault(); handleScroll('contact'); }}
+                            >
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    )
+}

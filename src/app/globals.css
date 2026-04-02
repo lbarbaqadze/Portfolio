@@ -1,0 +1,16 @@
+/* globals.css */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;  
+  background: black !important;
+  overflow-x: hidden; 
+  position: relative;
+}
+
+[data-aos] {
+  visibility: hidden;
+}
+[data-aos].aos-animate {
+  visibility: visible;
+}
