@@ -27,8 +27,6 @@ import styles from "./page.module.css";
 
 export default function Home() {
 
-  const path = process.env.NODE_ENV === 'production' ? '/Portfolio' : ''
-
   useEffect(() => {
     AOS.init({
       once: false,
@@ -189,7 +187,7 @@ export default function Home() {
           I enjoy turning complex problems into simple, elegant digital experiences.
         </p>
         <a
-          href={`${path}/cv/portfolioCV.pdf`}
+          href={`/cv/portfolioCV.pdf`}
           download="Lasha_Barbakadze_CV.pdf"
           className={styles.cvButton}
           data-aos="zoom-in"
@@ -237,49 +235,49 @@ export default function Home() {
             {
               title: "Georgian Wine - Website",
               description: "Responsive website showcasing authentic Georgian wines with rich traditions. Browse our wine catalog and learn about each variety.",
-              image: `${path}/images/images9.png`,
+              image: `/images/images9.png`,
               link: "https://lbarbaqadze.github.io/GeorgianWine/"
             },
             {
               title: "BMW - Magazine",
               description: "A modern web app featuring user login/registration stored in localStorage, interactive car catalog, and shopping cart functionality.",
-              image: `${path}/images/images8.png`,
+              image: `/images/images8.png`,
               link: "https://lbarbaqadze.github.io/bmwstore/"
             },
             {
               title: "Georgia Tours Website",
               description: "Responsive travel website showcasing Georgia destinations using React.",
-              image: `${path}/images/images1.png`,
+              image: `/images/images1.png`,
               link: "https://lbarbaqadze.github.io/Georgian/"
             },
             {
               title: "Apple Inspiration",
               description: "Interactive Apple-themed website where users can browse products, add items to the cart, and explore features in a smooth UI.",
-              image: `${path}/images/images2.png`,
+              image: `/images/images2.png`,
               link: "https://lbarbaqadze.github.io/store/"
             },
             {
               title: "GYM Website",
               description: "Informational CrossFit website where users can learn about the gym, check class schedules, and explore available programs.",
-              image: `${path}/images/images3.png`,
+              image: `/images/images3.png`,
               link: "https://gymwebsite-204.vercel.app"
             },
             {
               title: "React MiniTools",
               description: "Collection of small React tools and utilities for faster development and demos.",
-              image: `${path}/images/images4.png`,
+              image: `/images/images4.png`,
               link: "https://lbarbaqadze.github.io/MiniTools/"
             },
             {
               title: "Netflix Clone",
               description: "React-based clone of Netflix UI, including responsive layout.",
-              image: `${path}/images/images6.png`,
+              image: `/images/images6.png`,
               link: "https://lbarbaqadze.github.io/NetflixClone/"
             },
             {
               title: "Instagram Clone",
               description: "Full-featured Instagram clone using React, with user authentication and local storage",
-              image: `${path}/images/images7.png`,
+              image: `/images/images7.png`,
               link: "https://lbarbaqadze.github.io/InstagramClone/reglogin.html"
             }
           ].map((project, idx) => (
