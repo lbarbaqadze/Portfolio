@@ -50,7 +50,6 @@ export default function Home() {
 
   const skills = ["HTML/CSS", "React", "Typescript", "NextJs"];
 
-  // ტესტი
 
   return (
 
