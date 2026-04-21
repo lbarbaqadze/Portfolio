@@ -31,17 +31,17 @@
 .contactForm textarea {
     padding: 12px 15px;
     border-radius: 10px;
-    border: 1px solid #fff;
+    border: 1px solid #aeaeae;
     background: transparent;
     color: #fff;
     font-size: 16px;
-    resize: none;
+    resize: none;    
 }
 
 .contactForm button {
     padding: 12px 25px;
     border-radius: 25px;
-    border: 1px solid #fff;
+    border: 1px solid #aeaeae;
     background-color: transparent;
     color: #fff;
     font-weight: bold;

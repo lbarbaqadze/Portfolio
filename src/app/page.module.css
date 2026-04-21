@@ -4,7 +4,7 @@
     width: 100%;
     max-width: 1300px;
     min-height: 600px;
-    margin: 50px auto;
+    margin: 45px auto;
     padding-top: 80px;
     display: flex;
     justify-content: space-between;
@@ -118,6 +118,7 @@
     font-size: 18px;
     transition: 0.3s;
     text-decoration: none;
+    border: 1px solid white;
 }
 
 .contact:hover {
@@ -161,7 +162,7 @@
     }
 }
 
-.containerTwo {    
+.containerTwo {      
     max-width: 1000px;
     margin: 0 auto;
     padding: 0px 30px;
@@ -237,7 +238,7 @@
 .containerThree {        
     width: 100%;
     margin: 50px auto;
-    padding: 40px 20px;
+    padding: 45px 20px;
     text-align: center;
     display: flex;
     flex-direction: column;

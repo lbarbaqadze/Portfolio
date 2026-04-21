@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import React from "react";
 import AOS from 'aos';
-// @ts-ignore
 import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
@@ -231,31 +230,19 @@ export default function Home() {
         </h2>
 
         <div className={styles.projectsGrid}>
-          {[
-            {
-              title: "Georgian Wine - Website",
-              description: "Responsive website showcasing authentic Georgian wines with rich traditions. Browse our wine catalog and learn about each variety.",
-              image: `/images/images9.png`,
-              link: "https://lbarbaqadze.github.io/GeorgianWine/"
-            },
-            {
-              title: "BMW - Magazine",
-              description: "A modern web app featuring user login/registration stored in localStorage, interactive car catalog, and shopping cart functionality.",
-              image: `/images/images8.png`,
-              link: "https://lbarbaqadze.github.io/bmwstore/"
-            },
-            {
-              title: "Georgia Tours Website",
-              description: "Responsive travel website showcasing Georgia destinations using React.",
-              image: `/images/images1.png`,
-              link: "https://lbarbaqadze.github.io/Georgian/"
-            },
+          {[  
             {
               title: "Apple Inspiration",
               description: "Interactive Apple-themed website where users can browse products, add items to the cart, and explore features in a smooth UI.",
               image: `/images/images2.png`,
-              link: "https://lbarbaqadze.github.io/store/"
-            },
+              link: "https://store-weld-gamma.vercel.app/"
+            },          
+            {
+              title: "BMW - Magazine",
+              description: "A modern web app featuring user login/registration stored in localStorage, interactive car catalog, and shopping cart functionality.",
+              image: `/images/images8.png`,
+              link: "https://bmwstore-murex.vercel.app/"
+            },                        
             {
               title: "GYM Website",
               description: "Informational CrossFit website where users can learn about the gym, check class schedules, and explore available programs.",
@@ -263,23 +250,17 @@ export default function Home() {
               link: "https://gymwebsite-204.vercel.app"
             },
             {
-              title: "React MiniTools",
-              description: "Collection of small React tools and utilities for faster development and demos.",
-              image: `/images/images4.png`,
-              link: "https://lbarbaqadze.github.io/MiniTools/"
+              title: "Georgia Tours Website",
+              description: "Responsive travel website showcasing Georgia destinations using React.",
+              image: `/images/images1.png`,
+              link: "https://georgian-beta.vercel.app/"
             },
             {
-              title: "Netflix Clone",
-              description: "React-based clone of Netflix UI, including responsive layout.",
-              image: `/images/images6.png`,
-              link: "https://lbarbaqadze.github.io/NetflixClone/"
-            },
-            {
-              title: "Instagram Clone",
-              description: "Full-featured Instagram clone using React, with user authentication and local storage",
-              image: `/images/images7.png`,
-              link: "https://lbarbaqadze.github.io/InstagramClone/reglogin.html"
-            }
+              title: "Georgian Wine - Website",
+              description: "Responsive website showcasing authentic Georgian wines with rich traditions. Browse our wine catalog and learn about each variety.",
+              image: `/images/images9.png`,
+              link: "https://georgian-wine-nine.vercel.app/"
+            }            
           ].map((project, idx) => (
             <div
               key={idx}

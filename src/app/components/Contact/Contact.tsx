@@ -35,7 +35,7 @@ export default function ContactForm() {
                     placeholder="Your Name"
                     required
                     data-aos="fade-right"
-                    data-aos-delay="100"
+                    data-aos-delay="100"                    
                 />
 
                 <input
