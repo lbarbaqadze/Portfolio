@@ -233,6 +233,12 @@ export default function Home() {
         <div className={styles.projectsGrid}>
           {[  
             {
+              title: "Travel Agency",
+              description: " Full-Stack travel agency project with Google/Email Auth, Recovery, tour bookings, and a comprehensive Admin Panel for database CRUD management. Built with a focus on secure flows and high-end UI/UX synchronization.",
+              image: `/images/images4.png`,
+              link: "https://travel-frontend-zeta-indol.vercel.app/"
+            }, 
+            {
               title: "Apple Inspiration",
               description: "Interactive Apple-themed website where users can browse products, add items to the cart, and explore features in a smooth UI.",
               image: `/images/images2.png`,
