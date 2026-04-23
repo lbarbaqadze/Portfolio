@@ -224,7 +224,7 @@ export default function Home() {
           />
         </div>
       </div>
-
+            // ტესტ
       <div className={styles.containerFour} id="projects">
         <h2 className={styles.sectionTitle} data-aos="fade-down" data-aos-duration="1000">
           My Projects <FontAwesomeIcon icon={faDiagramProject} style={{fontSize: "28px"}} />
