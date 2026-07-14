@@ -10,7 +10,7 @@ const siteUrl =
 
 const title = "Lasha Barbakadze | Portfolio";
 const description =
-  "Front End Developer / Junior Node.js developer building fast, clean digital products with React, Next.js, Node.js, Express.js, and Nest.js.";
+  "Front End & Junior Node.js developer building fast, clean products with React, Next.js, Express.js, and Nest.js.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
