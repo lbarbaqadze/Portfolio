@@ -51,7 +51,7 @@ const fadeUp = {
 };
 
 const inputClassName =
-  "w-full rounded-xl border border-neutral-800 bg-neutral-950/60 px-4 py-3 text-sm text-white outline-none transition-colors placeholder:text-neutral-600 focus:border-neutral-600";
+  "w-full rounded-xl border border-neutral-800 bg-neutral-950/60 px-4 py-3 text-base text-white outline-none transition-colors placeholder:text-neutral-600 focus:border-neutral-600";
 
 export function Contact() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">(
