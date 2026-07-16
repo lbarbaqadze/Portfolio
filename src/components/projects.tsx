@@ -43,7 +43,17 @@ const featuredProjects = [
     type: "Frontend",
     description:
       "Apple-inspired product experience — clean typography, smooth interactions, and pixel-focused interface design.",
-    tech: ["React.js", "Next.js"],
+    tech: ["React.js", "Next.js", "Tailwind CSS", "TypeScript", "Zustand"],
+  },
+  {
+    title: "Habit Tracker",
+    image: "/habit-tracker.png",
+    live: "https://habit-tracker-coral-xi.vercel.app",
+    github: "https://github.com/lbarbaqadze/Habit-Tracker",
+    type: "Frontend",
+    description:
+      "habit and to-do tracker. Mark daily habits, build streaks, manage to-dos, and review progress all stored locally in your browser.",
+    tech: ["React.js", "Next.js", "Zustand", "Tailwind CSS"],
   },
 ];
 
@@ -171,21 +181,21 @@ export function Projects() {
                 variants={fadeUp}
                 className="group overflow-hidden rounded-2xl border border-neutral-800/80 bg-neutral-950/40 backdrop-blur-sm transition-colors hover:border-neutral-700"
               >
-              <div className="relative aspect-16/10 overflow-hidden border-b border-neutral-800/80">
+              <div className="relative aspect-video w-full overflow-hidden border-b border-neutral-800/80">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                />
                 <a
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block h-full w-full"
+                  className="absolute inset-0 z-10"
                   aria-label={`View ${project.title} live demo`}
                 >
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-                  />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors duration-300 group-hover:bg-black/40">
                     <span className="flex items-center gap-1.5 rounded-full border border-white/30 bg-black/50 px-4 py-2 text-sm font-medium text-white opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
                       Live Demo
