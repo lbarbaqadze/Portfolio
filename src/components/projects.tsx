@@ -52,7 +52,7 @@ const featuredProjects = [
     github: "https://github.com/lbarbaqadze/Habit-Tracker",
     type: "Frontend",
     description:
-      "habit and to-do tracker. Mark daily habits, build streaks, manage to-dos, and review progress all stored locally in your browser.",
+      "habit and to-do tracker. Mark daily habits, build streaks, manage to-do, and review progress all stored locally in your browser.",
     tech: ["React.js", "Next.js", "Zustand", "Tailwind CSS"],
   },
 ];
