@@ -28,7 +28,7 @@ const featuredProjects = [
   },
   {
     title: "Personal Trainer",
-    image: "/personal-trainer.png",
+    image: "/personal-trainers.png",
     live: "https://www.gym-weighlifting.com/en",
     type: "Freelance",
     description:
@@ -69,14 +69,14 @@ const boilerplates = [
     title: "MVC Structure",
     href: "https://github.com/lbarbaqadze/MVC_Structure",
     description:
-      "Express MVC boilerplate with Joi validation, global error handling, catchAsync wrapper, and prepared statements.",
+      "Express MVC boilerplate with Joi validation, global error handling, catchAsync wrapper, CRUD Operations and prepared statements.",
     tech: ["Node.js", "Express.js", "MySQL", "MVC", "Joi"],
   },
   {
     title: "Express Feature-Based",
     href: "https://github.com/lbarbaqadze/Express-Feature-Based",
     description:
-      "Modular feature-based architecture with a services layer, DB health-check on boot, and centralized error handling.",
+      "Modular feature-based architecture with a services layer, DB health-check on boot, CRUD Operations and centralized error handling.",
     tech: ["Node.js", "Express.js", "MySQL", "Joi"],
   },  
 ];
