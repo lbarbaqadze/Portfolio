@@ -115,8 +115,8 @@ export function About() {
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
             variants={fadeUp}
-            href="/Lasha_Barbakadze_CV.pdf"
-            download="Lasha_Barbakadze_CV.pdf"
+            href="/LashaBarbakadzeCV.pdf"
+            download="LashaBarbakadzeCV.pdf"
             className="mt-8 inline-flex items-center gap-2 rounded-full border border-neutral-700 px-6 py-3 text-sm font-medium text-neutral-300 transition-colors hover:border-neutral-500 hover:text-white"
           >
             <Download className="h-4 w-4" />
