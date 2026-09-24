@@ -66,6 +66,13 @@ const boilerplates = [
     tech: ["Node.js", "Express.js", "MySQL", "JWT", "Joi"],
   },
   {
+    title: "Next.js MetaData/SEO Boilerplate",
+    href: "https://github.com/lbarbaqadze/Nextjs-Metadata-Boilerplate",
+    description:
+      "Next.js SEO starter with config-driven metadata, social previews, JSON-LD, sitemap, and robots — indexable only in production.",
+    tech: ["Next.js", "TypeScript", "JSON-LD", "Open Graph"],
+  },
+  {
     title: "MVC Structure",
     href: "https://github.com/lbarbaqadze/MVC_Structure",
     description:
@@ -279,7 +286,7 @@ export function Projects() {
             Open Source
           </span>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Backend Architecture - Boilerplates
+          Boilerplates & Architecture
           </h2>          
         </motion.div>
 
